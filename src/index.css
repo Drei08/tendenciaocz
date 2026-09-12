@@ -1,0 +1,82 @@
+:root {
+  /* Paleta oficial da marca Tendência - Loja da Mara */
+  --color-gold: #FFD700;
+  --color-gold-dark: #E1B24A;
+  --color-gold-light: #F6D98C;
+  --color-black: #0D0D0D;
+  --color-black2: #2c2c2c;
+
+  /* aliases usados nos componentes */
+  --color-primary: var(--color-gold);
+  --color-primary-dark: var(--color-gold-dark);
+  --color-dark: var(--color-black);
+  --color-text: #2b2b2b;
+  --color-withe: #FFF;
+
+  --font-main: 'Roboto', sans-serif;
+  --font-display: 'Great Vibes', cursive;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-main);
+  color: var(--color-text);
+  /* substitui o scroll animado por jQuery: o navegador cuida do smooth scroll */
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-btn {
+  background: linear-gradient(135deg, var(--color-gold-light), var(--color-gold) 60%, var(--color-gold-dark));
+  color: var(--color-black);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 12px 28px;
+  border-radius: 15px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.main-btn:hover {
+  background: transparent;
+  color: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+.main-title {
+  color: var(--color-black);
+  margin: 0 0 50px 0;
+  font-size: 35px;
+  text-align: center;
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+}
+
+.main-title::after {
+  content: '';
+  display: block;
+  width: 20%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  margin: 14px auto 0 auto;
+}
+
+/* variante do título pra usar sobre fundo escuro/preto */
+.main-title--light {
+  color: #fff;
+}
+
+.main-title--light::after {
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}

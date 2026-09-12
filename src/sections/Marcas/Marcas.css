@@ -1,0 +1,103 @@
+#marcas {
+  position: relative;
+  overflow: hidden;
+  scroll-margin-top: 70px;
+}
+
+/* Vitrine de logos */
+.marcas-logos-area {
+  padding: 15px  5px;
+  background-color: #fff;
+}
+
+.marcas-logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-md-2-4 {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+
+.marca-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+}
+
+.marca-logo-box img {
+  max-width: 100%;
+  max-height: 60px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: 0.3s;
+}
+
+.marca-logo-box:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .col-md-2-4 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+/* Parallax + contadores */
+.marcas-background {
+  position: absolute;
+  inset: -10% 0;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.marcas-overlay {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(255, 252, 252, 0.85);
+  padding: 70px 0;
+}
+
+.circle-box {
+  padding: 0 40px;
+  text-align: center;
+}
+
+.progress-circle {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.progress-circle svg text {
+  font-weight: bold;
+  font-size: 20px;
+  fill: #fff;
+}
+
+#marcas .marcas-overlay p {
+  color: var(--color-gold-light);
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .circle-box {
+    padding: 0 10px;
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  #marcas .marcas-overlay p {
+    font-size: 12px;
+  }
+}

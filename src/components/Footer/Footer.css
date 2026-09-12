@@ -1,0 +1,25 @@
+#site-footer {
+  background-color: var(--color-black);
+  text-align: center;
+  border-top: 1px solid rgba(255, 215, 0, 0.15);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+#site-footer .container {
+  padding: 24px 0;
+}
+
+#site-footer p {
+  color: #999;
+  font-size: 13px;
+  margin: 0;
+}
+
+#site-footer a {
+  font-weight: 700;
+  color: var(--color-gold);
+}
+
+#site-footer a:hover {
+  color: var(--color-gold-light);
+}

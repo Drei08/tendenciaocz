@@ -1,0 +1,62 @@
+#contato {
+  padding: 70px 0;
+  text-align: center;
+  scroll-margin-top: 70px;
+}
+
+.contact-box {
+  padding-bottom: 30px;
+  margin-bottom: 50px;
+  /*Linha amarela da divisao*/
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.contact-box i {
+  font-size: 20px;
+  color: var(--color-text);
+  margin-bottom: 20px;
+  border: 2px solid var(--color-text);
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  display: inline-block;
+}
+
+.contact-box p {
+  font-size: 16px;
+}
+
+.contact-title {
+  font-weight: bold;
+  color: var(--color-primary-dark);
+}
+
+#msg-box p {
+  font-size: 22px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#contact-form .main-btn {
+  width: 120px;
+  border: none;
+}
+
+.contato-sucesso {
+  color: #2e7d32;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 425px) {
+  .contact-box {
+    border: none;
+    margin-bottom: 0;
+  }
+}

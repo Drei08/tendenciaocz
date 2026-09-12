@@ -1,0 +1,132 @@
+#main-navbar {
+  background-color: var(--color-dark);
+  /* border-top: 1px solid var(--color-primary); */
+  /* border-bottom: 2px solid var(--color-primary); */
+}
+
+#main-navbar {
+  background-color: rgba(13, 13, 13, 0.35);
+  backdrop-filter: blur(6px);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, padding 0.3s ease;
+  padding: 18px 0;
+}
+
+#main-navbar.is-scrolled {
+  background-color: var(--color-black);
+  box-shadow: var(--shadow-strong);
+  padding: 10px 0;
+}
+
+#logo {
+  height: 68px;
+  width: auto;
+  transition: height 0.3s ease;
+}
+
+#main-navbar.is-scrolled #logo {
+  height: 52px;
+}
+
+.navbar-brand {
+  padding: 5px 0;
+}
+
+#main-navbar .nav-link {
+  color: #fff;
+  padding: 0.6rem 1rem;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#main-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#main-navbar .nav-link:hover {
+  color: var(--color-gold);
+}
+
+#main-navbar .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+
+.nav-socials {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: 17rem;
+}
+
+.social-icon {
+  color: #d4af37; /* dourado */
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #000;
+  background-color: #d4af37;
+  border-color: #d4af37;
+  transform: translateY(-3px) scale(1.1);
+
+}
+
+.social-icon.whatsapp:hover {
+  animation: pulse 0.6s ease;
+}
+
+.social-icon.instagram:hover {
+  animation: spin-in 0.5s ease;
+}
+
+/*
+
+
+
+
+
+#main-navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: 0.2rem;
+  height: 2px;
+  background: var(--color-gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+#main-navbar .nav-link:hover {
+  color: var(--color-gold);
+}
+
+#main-navbar .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+
+*/

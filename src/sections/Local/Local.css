@@ -1,0 +1,126 @@
+#local {
+  scroll-margin-top: 90px;
+}
+
+.local-split {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  border: 2px solid var(--color-gold);
+
+}
+
+
+.local-image {
+  flex: 1 1 50%;
+  min-height: 320px;
+  background-size: cover;
+  background-position: center;
+}
+
+.local-map {
+  flex: 1 1 50%;
+  min-height: 320px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.local-map:hover {
+  filter: brightness(1.08);
+}
+
+
+/* VIDEO */
+/* .local-map {
+  flex: 1 1 50%;
+  min-height: 320px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.local-map-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.local-map:hover .local-map-video {
+  filter: brightness(1.08);
+} */
+
+
+@media (min-width: 768px) {
+  .local-split {
+    flex-direction: row;
+  }
+}
+
+
+/*
+
+.local-content {
+  flex: 1 1 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-black);
+  position: relative;
+  overflow: hidden;
+  padding: var(--space-2xl) var(--space-lg);
+
+  /* fundo decorativo: grade fina + pontinhos, no estilo da referência */
+  /* background-image:
+    radial-gradient(rgba(255, 215, 0, 0.18) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(255, 215, 0, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 215, 0, 0.08) 1px, transparent 1px);
+  background-size: 46px 46px, 46px 46px, 46px 46px;
+  background-position: 0 0, 0 0, 0 0;
+} */
+
+/* .local-content-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 420px;
+}
+
+.local-content-inner h4 {
+  font-family: var(--font-display);
+  font-size: 34px;
+  color: var(--color-gold);
+  text-transform: none;
+  margin-bottom: var(--space-md);
+}
+
+.local-content-inner p {
+  color: #e6e6e6;
+  font-size: 15px;
+  margin-bottom: var(--space-sm);
+}
+
+.main-btn--outline {
+  display: block;
+  width: 180px;
+  margin: var(--space-md) auto 0 auto;
+  background: transparent;
+  color: var(--color-gold);
+  border: 2px solid var(--color-gold);
+  box-shadow: none;
+}
+
+.main-btn--outline:hover {
+  background: var(--color-gold);
+  color: var(--color-black);
+  transform: translateY(-2px);
+} */
+
+
